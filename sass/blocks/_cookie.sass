@@ -1,0 +1,66 @@
+.cookie-wrapper 
+  position: fixed
+  bottom: 0px
+  left: 0
+  right: 0
+  width: 33%
+  background: #fff
+  padding: 15px 25px 22px
+  transition: right 0.3s ease
+  box-shadow: 0 5px 10px rgb(0, 0, 0)
+  z-index: 999
+  .cookie-header
+    text-align: center
+.cookie-wrapper .show 
+  right: 20px
+
+
+
+.hidden 
+    display: none
+
+header i 
+  color: $bg-color
+  font-size: 32px
+
+header h2 
+  color: $bg-color
+  font-weight: 500
+
+.data 
+    text-align: center
+
+.data p a 
+  color: $bg-color
+  text-decoration: none
+  text-align: center !important
+
+.data p a:hover 
+  text-decoration: underline
+
+.buttons 
+    padding: 20px 0px
+    text-align: center
+
+.buttons .cookie-button 
+  border: 2px solid $bg-color
+  color: #fff
+  padding: 8px 0
+  border-radius: .5rem
+  background: $bg-color
+  cursor: pointer
+  width: calc(100% / 2 - 10px)
+  transition: all 0.2s ease
+  max-width: 150px
+
+.buttons #acceptBtn:hover 
+    background-color: $font-color-white
+    color: $bg-color
+
+#declineBtn 
+    background-color: #fff
+    color: $bg-color
+
+.buttons #declineBtn:hover 
+    background-color: $bg-color
+    color: $font-color-white

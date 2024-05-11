@@ -1,0 +1,40 @@
+.contacts
+    &__wrapper
+        border: $border-style
+        border-radius: $border-radius
+    &__items
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 1rem
+        &-heading
+            color: $font-color-black
+            font-weight: 500
+        &-descr
+            text-align: center
+
+            &-phone
+                color: $font-color-main
+                font-size: $font-size-base
+            p
+                font-size: 1.2rem
+                white-space: nowrap
+                
+.form__wrapper
+    padding-bottom: 3rem
+    label
+        border-radius: $border-radius
+        border: $border-style
+    img
+        width: 100%
+        height: 600px
+        object-fit: cover
+        border-radius: $border-radius
+    .form-control
+        font-size: $font-size-primary
+        color: $font-color-main
+.map__wrapper
+    iframe
+        width: 100%
+        height: 600px

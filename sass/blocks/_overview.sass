@@ -1,0 +1,73 @@
+.overview
+    &-wrapper
+        display: flex
+        flex-flow: column
+        gap: 100px
+    &-block
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 80px
+        overflow: hidden
+        &-image
+            width: 100%
+            height: 480px
+            object-fit: cover
+            border-radius: $border-radius
+            img
+                width: 100%
+                height: 100%
+                display: inline-block
+            &-wrapper
+                width: 100%
+                height: 100%
+                opacity: 1
+        &-text-wrapper
+            display: flex
+            flex-flow: column
+            gap: 13px
+            .upper-heading
+                letter-spacing: .06em
+                text-transform: uppercase
+                font-size: 14px
+                font-weight: 700
+                line-height: 20px
+                color: $font-color-main
+            h2
+                font-weight: 600
+        &-para-wrapper
+            display: flex
+            flex-flow: column
+            gap: 35px
+            padding-left: 60px
+            margin-top: 12px
+            p
+                font-size: $font-size-base
+                color: $font-color-p
+            a
+                color: $font-color-p
+                transition: $transition
+                &:hover
+                    transform: translate(10px, 0)
+                    color: $font-color-main
+            .ternary-link
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                font-weight: 600
+                &-text-1
+                    flex: none
+                &-text-2
+                    flex: none
+                &-divider
+                    flex: none
+                    margin-left: 5px
+                    margin-right: 5px
+                    border: 1px solid
+                    width: 15px
+                    height: 2px
+                &-arrow
+                    display: flex
+                    margin-left: 8px
+                    align-items: center
+                    justify-content: center

@@ -1,0 +1,50 @@
+
+@media screen and ( min-width: 769px )
+  .navbar-expand-lg .navbar-collapse
+    justify-content: flex-end
+
+@media screen and ( max-width: 768px )
+  .header
+    height: 100vh
+    padding-top: 0
+    &__wrapper
+      padding-top: 80px
+    &__main
+      padding-top: 60px
+    &__img
+      height: 300px
+  .section-header
+    padding: 50px 100px
+  .about__item
+    img
+      height: 300px
+  .about__main
+    padding-bottom: 15px
+  .navbar
+    align-items: flex-start
+  .navbar-wrapper
+    padding: 0
+    background-color: $bg-color
+  .logo
+    padding-left: 15px
+  .navbar-nav
+    justify-content: center
+    align-items: center
+  .overview-block
+    flex-flow: column
+  .overview-block-text-wrapper
+    order: -1
+  .contacts__items
+    gap: 0
+
+@media screen and ( max-width: 1024px )
+  .category-blocks-wrapper
+    grid-template-columns: repeat(2,1fr)  
+@media screen and ( max-width: 425px )
+  .category-blocks-wrapper
+    grid-template-columns: repeat(1,1fr)  
+  .section-header
+    padding: 0
+  .header__main
+    padding-top: 0
+    justify-content: center

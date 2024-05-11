@@ -1,0 +1,104 @@
+.navbar
+    height: 80px
+    transition: all 0.5s
+    .logo
+        .navbar-brand
+            display: flex
+            justify-content: center
+            align-items: center
+            background-size: contain 
+            margin: 0
+            font-size: $font-size-primary
+            color: #fff
+.nav-link
+        font-size: $font-size-base
+        color: #fff !important
+.fixed-top
+  background-color: $bg-color
+  border-bottom: 1px solid #fff
+
+ul.navbar-nav li a
+    position: relative 
+    display: inline-flex  
+    &:before
+        content: ""
+        display: block
+        position: absolute
+        left: 0
+        bottom: 0
+        height: 2px
+        width: 0
+        transition: width 0s ease, background 0.35s ease 
+    &:hover::before
+        width: 100%
+        background: #fff
+        transition: width 0.35s ease
+    &:after
+        content: ""
+        display: block
+        position: absolute
+        right: 0
+        bottom: 0
+        height: 2px
+        width: 0
+        background: #fff
+        transition: width 0.35s ease   
+    &:hover::after
+        width: 100%
+        transition: all 0s ease
+ul.navbar-nav li
+    margin-right: 50px
+.navbar-toggler
+    border: none
+    &:focus
+        box-shadow: none
+.navbar-toggler-icon 
+    background-image: none!important
+    background-color: #fff
+    height: 3px
+    width: 25px
+    margin: 10px 0
+    position: relative
+    transition: all 0.35s ease-out
+    transform-origin: center
+
+
+.navbar-toggler-icon::before 
+    display: block
+    background-color: #fff
+    height: 3px
+    content: ""
+    position: relative
+    top: -7px
+    transition: all 0.15s ease-out/*taken down to hide quicker*/
+    transform-origin: center
+
+
+.navbar-toggler-icon::after 
+    display: block
+    background-color: #fff
+    height: 3px
+    content: ""
+    position: relative
+    top: 4px
+    transition: all 0.35s ease-out
+    transform-origin: center
+
+
+.navbar-dark .navbar-toggler-icon,
+.navbar-dark .navbar-toggler-icon::before,
+.navbar-dark .navbar-toggler-icon::after 
+    background-color: #fff
+
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon 
+    transform: rotate(45deg)
+
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before 
+    opacity: 0
+
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after 
+    transform: rotate(-90deg) translateX(7px)
+

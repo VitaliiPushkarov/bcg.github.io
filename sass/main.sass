@@ -1,0 +1,74 @@
+$font-size-base: 1.2rem
+$font-size-primary: 1.5rem
+$font-size-btn: 1.8rem
+$font-size-heading: calc(1.525rem + 3.3vw)
+$font-color-main: #36ac50
+$font-color-p: #5c5b5b
+$bg-color: #36ac50
+$bg-color-blue: #b7fcc663
+$bg-color-violet: #3421db93
+$border-style: 2px solid $font-color-main
+$border-radius: 15px
+$font-color-white: #fff
+$font-color-black: #000
+$transition: all .4s ease-out
+
+
+html,body
+    margin: 0
+    padding: 0    
+a
+    text-decoration: none
+.main-color-text
+    color: $font-color-main
+.main-color-heading
+    color: $font-color-main
+    font-size: $font-size-heading
+    font-weight: 500
+.section-header
+    padding: 50px 200px
+    text-align: center
+    &-title
+        color: $font-color-white
+        font-weight: 500
+    &-descr
+        color: $font-color-white
+        font-size: $font-size-base
+        font-weight: 400
+.border-bottom
+    border-bottom: 1px  solid $font-color-main !important
+    padding-bottom: 2rem
+.display-2
+    font-weight: 700
+.green
+    background-color: $font-color-main
+    color: $font-color-white
+.btn-primary
+    background-color: $font-color-main
+    color: #fff
+    font-size: $font-size-btn
+    border: $border-style
+    transition: all .5s ease-out
+    &:hover
+        color: $font-color-black
+        background-color: transparent
+        border: $border-style
+footer
+    background-color: $bg-color   
+    a
+        font-size: $font-size-base
+@keyframes infinite-line
+    100% 
+        transform: translateX(-100%)  
+
+@import blocks/_nav
+@import blocks/_header
+@import blocks/_about
+@import blocks/_overview
+@import blocks/_cta
+@import blocks/_category
+@import blocks/_portfolio
+@import blocks/_contacts
+@import blocks/_modal
+@import blocks/_cookie
+@import variables/media

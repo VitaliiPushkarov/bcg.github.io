@@ -1,0 +1,170 @@
+.category-section 
+  position: relative
+
+
+.category-container 
+  gap: 120px
+  flex-flow: column
+  display: flex
+
+
+.category-row-1 
+  grid-column-gap: 65px
+  grid-row-gap: 65px
+  flex-flow: column
+  justify-content: center
+  align-items: center
+  display: flex
+
+
+.category-heading-wrapper 
+  grid-column-gap: 25px
+  grid-row-gap: 25px
+  text-align: center
+  flex-flow: column
+  max-width: 575px
+  display: flex
+
+
+.category-blocks-wrapper 
+  gap: 35px
+  grid-template-rows: auto
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-auto-columns: 1fr
+  display: grid
+
+
+.category-block 
+  gap: 9px
+  border-radius: $border-radius
+  flex-flow: column
+  padding: 45px 30px 35px
+  display: flex
+  transition: $transition
+  &:hover
+    background-color: $bg-color-blue
+    transform: scale(1.05)
+
+
+.category-block-icon 
+  border-radius: 50%
+  width: 64px
+  height: 64px
+  margin-bottom: 27px
+  box-shadow: 0 10px 20px rgba(43, 46, 69, .07)
+
+.category-block-btn-wrapper 
+  margin-top: 18px
+
+
+.ternary-small-text 
+  font-size: 14px
+  font-weight: 700
+  line-height: 20px
+
+
+.shadow-2 
+  box-shadow: 0 5px 50px 10px rgba(27, 26, 45, .07)
+
+
+.category-accordion-container 
+  justify-content: center
+  align-items: center
+  display: flex
+
+
+.accordion-blocks-container 
+  text-align: left
+  width: 100%
+  display: flex
+
+
+.accordion-para-wrapper 
+  overflow: hidden
+
+
+.accordion-content-wrapper 
+  flex-direction: column
+  width: 100%
+  max-width: 674px
+  display: flex
+
+
+.accordion-row-wrapper 
+  justify-content: space-between
+  width: 100%
+  padding-bottom: 0
+  display: flex
+
+
+.accordion-block 
+  border-radius: var(--radius--radius-2)
+  background-color: #fff
+  border: 1px solid rgba(43, 46, 69, .1)
+  justify-content: space-between
+  align-items: flex-start
+  width: 100%
+  margin-bottom: 20px
+  padding: 20px 30px
+  display: inline-block
+
+
+.accordion-block.w--current 
+  background-color: rgba(221, 221, 221, 0)
+
+
+.accordion-block.v2 
+  box-shadow: none
+  background-color: rgba(255, 255, 255, 0)
+  border-style: none none solid
+  border-bottom-width: 1px
+  border-bottom-color: rgba(43, 46, 69, .1)
+  border-radius: 0
+  margin-bottom: 0
+  padding: 25px 12px
+
+
+.accordion-para 
+  padding-top: 10px
+
+
+.accordion-blocks-wrapper 
+  grid-column-gap: 25px
+  grid-row-gap: 25px
+  column-count: 2
+  column-rule-style: none
+  flex-flow: column wrap
+  column-gap: 20px
+  display: block
+
+
+.accordion-blocks-wrapper.display-flex 
+  grid-column-gap: 0px
+  grid-row-gap: 0px
+  display: flex
+
+
+.accordion-arrow-wrapper 
+  justify-content: center
+  align-items: center
+  display: flex
+
+
+.category-accordion-text-wrapper 
+  grid-column-gap: 25px
+  grid-row-gap: 25px
+  flex-flow: column
+  max-width: 415px
+  display: flex
+
+
+.category-accordion-link-wrapper 
+  margin-top: 20px
+
+
+.accordion-lottie 
+  justify-content: center
+  align-items: center
+  width: 15px
+  height: 15px
+  display: flex
